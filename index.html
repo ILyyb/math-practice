@@ -23,11 +23,35 @@
             <button id="submit-btn">提交</button>
             <div id="feedback"></div>
         </div>
-        <div class="stats">
-            <div>得分: <span id="score">0</span></div>
-            <div>用时: <span id="time">0</span>秒</div>
-        </div>
+    <div class="stats">
+        <div>得分: <span id="score">0</span></div>
+        <div>用时: <span id="time">0</span>秒</div>
+        <div>星星: <span id="stars">0</span>⭐</div>
     </div>
+
+    <div class="action-buttons">
+        <button id="wrong-questions-btn">查看错题本</button>
+        <button id="history-btn">查看历史记录</button>
+    </div>
+</div>
+
+<!-- 错题本弹窗 -->
+<div id="wrong-questions-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>错题本</h2>
+        <div id="wrong-questions-list"></div>
+    </div>
+</div>
+
+<!-- 历史记录弹窗 -->
+<div id="history-modal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>练习历史</h2>
+        <div id="history-list"></div>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>

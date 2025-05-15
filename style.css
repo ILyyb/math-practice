@@ -91,3 +91,88 @@ button:hover {
 .wrong {
     color: #F44336;
 }
+
+/* 新增样式 */
+.action-buttons {
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    margin: 5px;
+    background-color: #ff9800;
+}
+
+.action-buttons button:hover {
+    background-color: #e68a00;
+}
+
+#stars {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+/* 弹窗样式 */
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* 错题和历史记录列表 */
+#wrong-questions-list,
+#history-list {
+    margin-top: 20px;
+}
+
+.wrong-item, .history-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.wrong-item div, .history-item div {
+    margin: 3px 0;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    select, button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+    
+    .modal-content {
+        width: 90%;
+    }
+}
